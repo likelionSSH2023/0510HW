@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* Global -------------------------------------------------*/
+/*
+
+*/
+
+/* html -------------------------------------------------- */
+
+.icon{
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-image: url('menow.png');
+  background-repeat: round;
+  background-color: black;
+}
+
+.information{
+  padding: 1% 3%;
+}
+.information>section:nth-child(1){
+  font-size: 1rem;
+}
+.information>section:nth-child(2){
+  font-size: 0.3rem;
+}
+
+.image{
+  width: 100%;
+  padding-bottom: 100%;
+  background-image: url('sad.png');
+  background-repeat: round;
+  background-color: black;
+}
+
+.icons{
+  color: white;
+}
+.icon_bottom{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-image: url('menow.png');
+  background-repeat: round;
+  background-color: black;
+}
+
+body {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  width: 100vw; /* %를 쓴다는 것은 부모요소를 기준 (vw)*/
+  height: 100vh;
+  margin: 0;
+}
+
+/* 아래에 container css style을 지정해주세요. */
+
+/* 아래에 item css style을 지정해주세요. */
+.item{
+  padding: 0% 2%;
+  width: 100%;
+  justify-content: center;
+  align-items:  center;
+  background-color:  black;
+  color: white;
+}
+
+.container{
+  padding: 3% 3%;
+  justify-content: flex-start;
+  align-items:center;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  height: 100vh;
+}
+
+.item:nth-child(1){
+  width: 100%;
+  height: 0;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+
+.item:nth-child(1)>div:nth-child(3){
+  color:black;
+}
+
+.item:nth-child(2){
+  display: flex;
+  place-items: center;
+
+  height: 40px;
+  flex-shrink: 0;
+  justify-content: flex-start;
+}
+
+
+.item:nth-child(3){
+  padding: 3% 0%;
+}
+
+.item:nth-child(4){
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  flex-grow: 1;
+}  
+
+.item:nth-child(5){
+  display: flex;
+  flex-direction:row;
+  justify-content: start;
+  font-size: 0.3rem;
+}
+
+.like{
+  font-size: 0.3rem;
+  padding: 0 0 3px 0;
+}
+
+.like_icon{
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-image: url('menow.png');
+  background-repeat: round;
+  background-color: black;
+}
+
+.item:nth-child(6){
+  height: 100px;
+}
+
+.item:nth-child(7){
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+
+
+
+.item:nth-child(3)>.item:nth-child(1){
+  place-items: center;
+  background-color: white;
+  color: black;
+}
+.item:nth-child(3)>.item:nth-child(2){
+  padding: 0% 5%;
+  place-items: center;
+}

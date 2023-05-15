@@ -1,0 +1,152 @@
+/* Global -------------------------------------------------*/
+
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'BookkMyungjo-Bd';
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+table{
+  width:90%;
+  height: 90%;
+  background-color: white;
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  text-align: center;
+  border: 2px solid black;
+  padding: 3px;
+}
+
+ul{
+  width: 90%;
+  list-style-position:outside;
+  padding: 10px 10px 10px 15px;
+}
+
+
+.insta_view{
+  border-radius: 10px;
+  border:none;
+  background-color: black;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+/* 아래에 container css style을 지정해주세요. */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+
+  color: #ff7710;
+  border: 1px solid white;
+}
+
+/* 아래에 item css style을 지정해주세요. */
+.item {
+  border-radius: 10px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+  height: 90%;
+}
+
+.container>.item:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  border-radius: 0px;
+  width: 100%;
+}
+
+.container>.item:nth-child(2) {
+  border-radius: 0px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background-color: white;
+
+  position: relative;
+  width: 80%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 140%;
+}
+
+.container>.item:nth-child(3) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display : flex;
+  flex-direction: row;
+
+
+}
+
+.container>.item:nth-child(4) {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+
+
+.item:nth-child(3)>.item:nth-child(1){
+  width: 50%;
+  place-items: center;
+  color: black;
+}
+
+.item:nth-child(3)>.item:nth-child(2){
+  width: 50%;
+  place-items: center;
+  display : flex;
+  flex-direction: column;
+  color: white;
+}
+
+.Fi{
+  animation-duration: 5s;
+  animation-name: Fi;
+  animation-iteration-count: infinite;
+}
+
+/* 아래에 css animation을 지정해주세요. */
+@keyframes Fi{
+  0% {
+    opacity: 0;
+}
+  50% {
+    opacity: 1;
+}
+  100%{
+    opacity: 0;
+  }
+}
