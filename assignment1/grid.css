@@ -9,6 +9,7 @@
 
 
 * {
+  border: solid 1px red;
   box-sizing: border-box;
   font-family: 'BookkMyungjo-Bd';
   font-size: 0.6rem;
